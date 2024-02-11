@@ -1,0 +1,14 @@
+title: $:/config/FileSystemPaths
+type: text/plain
+
+[is[system]!tag[GTD]!tag[Checklist]!has[draft.of]removeprefix[$:/]addprefix[_system/]]
+[tag[Private]!tag[Journal]addprefix[private/]]
+[tag[Journal]tag[Private]addprefix[journals/private/]]
+[tag[Journal]addprefix[journals/]]
+[is[draft]search-replace:g:regexp[/|\\],[_]addprefix[drafts/]]
+[is[image]addprefix[images/]]
+[tag[GTD]removeprefix[$:/]addprefix[task-management/]]
+[tag[task]addprefix[task-management/tasks/]]
+[tag[todo]addprefix[task-management/todo/]]
+[tag[Checklist]addprefix[task-management/checklist/]]
+[!tag[externalnote]addprefix[wiki/]]
